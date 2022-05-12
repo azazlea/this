@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>position + z-index</title>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/parallax.css">
+		<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+		<div class="bg-container">
+			<img id="image" src="d.png">
+			<h1 id="text">備忘雨林</h1>
+			<img id="bg" src="img/z-2.png">
+		</div>
+		<div class="bg-container">
+			<img id="image" src="d.png">
+			<h1 id="text">備忘雨林</h1>
+			<img id="bg" src="img/z-2.png">
+		</div>	<div class="bg-container">
+			<img id="image" src="d.png">
+			<h1 id="text">備忘雨林</h1>
+			<img id="bg" src="img/z-2.png">
+		</div>	<div class="bg-container">
+			<img id="image" src="d.png">
+			<h1 id="text">備忘雨林</h1>
+			<img id="bg" src="img/z-2.png">
+		</div>
+	</body>
+
+	<script type="text/javascript">
+		let bg = document.getElementById('bg');
+		let text = document.getElementById('text');
+		let image = document.getElementById('image');
+
+		window.addEventListener('scroll', function(){
+			var value = window.scrollY;
+			bg.style.top = value * 0.25 + 'px';
+			text.style.top = value * 0.15 + 'px';
+		})
+	</script>
+
+</html>
